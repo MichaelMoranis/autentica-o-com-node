@@ -1,0 +1,49 @@
+POST http://localhost:3333/persona
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1pY2hhZWwgTW9yYW5pcyIsImlhdCI6MTczMDkzNzAzOCwiZXhwIjoxNzMwOTQwNjM4fQ.ZzTib9GsaMWu9FTN7EXR3fdIos_MQ4sB3ySsQ-doc18
+
+{
+    "title": "Michael Moranis",
+    "description": "developer",
+    "age": 28
+}
+
+
+###
+GET http://localhost:3333/persona 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1pY2hhZWwgTW9yYW5pcyIsImlhdCI6MTczMDkzNzAzOCwiZXhwIjoxNzMwOTQwNjM4fQ.ZzTib9GsaMWu9FTN7EXR3fdIos_MQ4sB3ySsQ-doc18
+
+
+###
+PUT  http://localhost:3333/persona/
+Content-Type: application/json
+Authorization: Bearer 
+
+{
+    "title": "Mislane Medeiros",
+    "description": "vendedora manica",
+    "age": 22
+}
+
+###
+DELETE   http://localhost:3333/persona/98cb3d92-e000-4f6d-a5a4-5acb93945f02
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1pY2hhZWwgTW9yYW5pcyIsImlhdCI6MTczMDc3MjMwOSwiZXhwIjoxNzMwNzc1OTA5fQ.kkSO0g8Tnf9g9Lm6hdCmlEUX6GYEQUcJMGV2Vbc0Yvc
+
+
+### 
+POST http://localhost:3333/register
+Content-Type: application/json
+
+{
+    "username": "Michael Moranis",
+    "password": "senhaSegura1234"
+}
+
+### 
+POST http://localhost:3333/login
+Content-Type: application/json
+
+{
+    "username": "Michael Moranis",
+    "password": "senhaSegura1234"
+}
